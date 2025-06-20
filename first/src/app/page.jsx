@@ -17,6 +17,7 @@ export default function Page() {
     const fetchLogs = async () => {
       try {
         const res = await fetch('https://backend-task1-a8q1.vercel.app/api/logs');
+        // const res = await fetch('https://projectnewbackend1-1.onrender.com/api/logs');
         const data = await res.json();
         setLogs(data);
         setFilteredLogs(data);
